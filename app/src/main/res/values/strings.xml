@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TMDB MOVIEBOX</string>
+    <string name="poster_desc">Movie poster</string>
+    <string name="status_image_desc">Internet connection is unavailable</string>
+    <string name="toolbar_title">MOVIEBOX</string>
+    <string name="playing_now_label">Playing now</string>
+    <string name="most_popular_label">Most popular</string>
+    <string name="overview_label">Overview</string>
+</resources>

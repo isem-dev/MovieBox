@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#0C0C0C</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorRating">#52CB68</color>
+    <color name="colorRatingBackground">#19371E</color>
+    <color name="colorRatingLow">#C8D135</color>
+    <color name="colorRatingBackgroundLow">#32300D</color>
+
+    <color name="colorTextLabel">#FCD052</color>
+    <color name="colorBackground">#515151</color>
+    <color name="colorBackgroundMovieItem">#212121</color>
+    <color name="colorTextMovieItem">#CDCDCD</color>
+</resources>

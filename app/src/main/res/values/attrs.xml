@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingView">
+
+        <attr name="ratingValueMax" format="float" />
+        <attr name="ratingValueThresholdLow" format="float" />
+
+        <attr name="ratingColor" format="color" />
+        <attr name="ratingColorLow" format="color" />
+        <attr name="ratingBackgroundColor" format="color" />
+        <attr name="ratingBackgroundColorLow" format="color" />
+        <attr name="ratingStrokeWidth" format="dimension" />
+        <attr name="ratingBackgroundStrokeWidth" format="dimension" />
+
+        <attr name="fillBackground" format="boolean" />
+
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+
+        <attr name="direction" format="enum">
+            <enum name="clockwise" value="0" />
+            <enum name="counterclockwise" value="1" />
+        </attr>
+
+        <attr name="ratingCap" format="enum">
+            <enum name="round" value="0" />
+            <enum name="butt" value="1" />
+        </attr>
+
+        <attr name="startAngle" format="integer|reference" />
+
+    </declare-styleable>
+
+</resources>

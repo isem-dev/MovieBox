@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.backbase.assignment.ui.DetailViewModel" />
+    </data>
+
+    <ScrollView
+        android:id="@+id/detailView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        tools:context=".DetailFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/posterDetail"
+                android:layout_width="135dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/layout_detail_margin_top"
+                android:contentDescription="@string/poster_desc"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:posterUrl="@{viewModel.selectedMovie.posterSrcUrl}"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/titleDetail"
+                style="@style/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_small"
+                android:paddingStart="@dimen/layout_detail_text_padding"
+                android:paddingEnd="@dimen/layout_detail_text_padding"
+                android:text="@{viewModel.selectedMovie.title}"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/posterDetail"
+                tools:text="Movie Title" />
+
+            <TextView
+                android:id="@+id/releaseDateDetail"
+                style="@style/detailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_small"
+                app:layout_constraintEnd_toEndOf="@+id/posterDetail"
+                app:layout_constraintStart_toStartOf="@+id/posterDetail"
+                app:layout_constraintTop_toBottomOf="@+id/titleDetail"
+                app:releaseDateFormat="@{viewModel.selectedMovie.releaseDate}"
+                tools:text="April 12, 2019" />
+
+            <TextView
+                android:id="@+id/durationDetail"
+                style="@style/detailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_small"
+                app:durationTimeFormat="@{viewModel.selectedMovie.duration}"
+                app:layout_constraintEnd_toEndOf="@+id/releaseDateDetail"
+                app:layout_constraintStart_toStartOf="@+id/releaseDateDetail"
+                app:layout_constraintTop_toBottomOf="@+id/releaseDateDetail"
+                tools:text="3h 1m" />
+
+            <TextView
+                android:id="@+id/overviewLabel"
+                style="@style/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:paddingStart="@dimen/layout_detail_text_padding"
+                android:paddingEnd="@dimen/layout_detail_text_padding"
+                android:text="@string/overview_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/durationDetail" />
+
+            <TextView
+                android:id="@+id/overviewDetail"
+                style="@style/detailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_small"
+                android:paddingStart="@dimen/layout_detail_text_padding"
+                android:paddingEnd="@dimen/layout_detail_text_padding"
+                android:text="@{viewModel.selectedMovie.overview}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/overviewLabel"
+                tools:text="Hello movie overview long multi-row text is here.\nNext line..." />
+
+            <TextView
+                android:id="@+id/genresDetail"
+                style="@style/detailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:textStyle="bold"
+                app:genres="@{viewModel.selectedMovie.listOfGenres}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/overviewDetail"
+                tools:text="ADVENTURE  SCIENCE FICTION  ACTION" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
