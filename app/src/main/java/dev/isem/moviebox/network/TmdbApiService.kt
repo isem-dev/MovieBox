@@ -1,4 +1,4 @@
-package com.backbase.assignment.network
+package dev.isem.moviebox.network
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

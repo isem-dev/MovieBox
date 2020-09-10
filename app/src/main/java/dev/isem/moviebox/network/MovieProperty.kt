@@ -1,4 +1,4 @@
-package com.backbase.assignment.network
+package dev.isem.moviebox.network
 
 import android.os.Parcelable
 import com.squareup.moshi.Json

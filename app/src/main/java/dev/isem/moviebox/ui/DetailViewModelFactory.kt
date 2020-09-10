@@ -1,9 +1,9 @@
-package com.backbase.assignment.ui
+package dev.isem.moviebox.ui
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.backbase.assignment.network.MovieProperty
+import dev.isem.moviebox.network.MovieProperty
 
 class DetailViewModelFactory(
     private val movieProperty: MovieProperty,

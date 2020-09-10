@@ -1,9 +1,9 @@
-package com.backbase.assignment.ui
+package dev.isem.moviebox.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import com.backbase.assignment.R
+import dev.isem.moviebox.R
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,14 +1,14 @@
-package com.backbase.assignment.ui
+package dev.isem.moviebox.ui
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.backbase.assignment.BuildConfig
+import dev.isem.moviebox.BuildConfig
 import kotlinx.coroutines.*
-import com.backbase.assignment.network.MoviePoster
-import com.backbase.assignment.network.MovieProperty
-import com.backbase.assignment.network.TmdbApi
+import dev.isem.moviebox.network.MoviePoster
+import dev.isem.moviebox.network.MovieProperty
+import dev.isem.moviebox.network.TmdbApi
 
 enum class TmdbApiStatus { PROGRESS, DONE, ERROR}
 

@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.backbase.assignment.ui.DetailViewModel" />
+            type="dev.isem.moviebox.ui.DetailViewModel" />
     </data>
 
     <ScrollView

@@ -1,4 +1,4 @@
-package com.backbase.assignment.ui.custom
+package dev.isem.moviebox.ui.custom
 
 import android.content.Context
 import android.graphics.*
@@ -7,7 +7,7 @@ import android.text.TextPaint
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.View
-import com.backbase.assignment.R
+import dev.isem.moviebox.R
 import kotlin.math.max
 import kotlin.math.min
 

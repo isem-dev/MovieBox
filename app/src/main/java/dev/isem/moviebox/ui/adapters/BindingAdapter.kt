@@ -1,4 +1,4 @@
-package com.backbase.assignment.ui.adapters
+package dev.isem.moviebox.ui.adapters
 
 import android.view.View
 import android.widget.ImageView
@@ -6,12 +6,12 @@ import android.widget.TextView
 import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.backbase.assignment.R
-import com.backbase.assignment.network.Genre
-import com.backbase.assignment.network.MoviePoster
-import com.backbase.assignment.network.MovieProperty
-import com.backbase.assignment.ui.TmdbApiStatus
-import com.backbase.assignment.ui.custom.RatingView
+import dev.isem.moviebox.R
+import dev.isem.moviebox.network.Genre
+import dev.isem.moviebox.network.MoviePoster
+import dev.isem.moviebox.network.MovieProperty
+import dev.isem.moviebox.ui.TmdbApiStatus
+import dev.isem.moviebox.ui.custom.RatingView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import java.text.SimpleDateFormat

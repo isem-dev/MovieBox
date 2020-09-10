@@ -7,7 +7,7 @@
 
         <variable
             name="poster"
-            type="com.backbase.assignment.network.MoviePoster" />
+            type="dev.isem.moviebox.network.MoviePoster" />
     </data>
 
     <ImageView

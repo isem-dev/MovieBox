@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.backbase.assignment.ui.OverviewViewModel" />
+            type="dev.isem.moviebox.ui.OverviewViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

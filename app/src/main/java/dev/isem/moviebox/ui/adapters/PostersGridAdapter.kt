@@ -1,12 +1,12 @@
-package com.backbase.assignment.ui.adapters
+package dev.isem.moviebox.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.backbase.assignment.databinding.NowPlayingGridItemBinding
-import com.backbase.assignment.network.MoviePoster
+import dev.isem.moviebox.databinding.NowPlayingGridItemBinding
+import dev.isem.moviebox.network.MoviePoster
 
 class PostersGridAdapter(private val onClickListener: OnClickListener) :
     ListAdapter<MoviePoster, PostersGridAdapter.MoviePosterViewHolder>(DiffCallback) {

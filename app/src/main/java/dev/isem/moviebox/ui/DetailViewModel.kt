@@ -1,10 +1,10 @@
-package com.backbase.assignment.ui
+package dev.isem.moviebox.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.backbase.assignment.network.MovieProperty
+import dev.isem.moviebox.network.MovieProperty
 
 class DetailViewModel(movieProperty: MovieProperty, app: Application) : AndroidViewModel(app) {
 

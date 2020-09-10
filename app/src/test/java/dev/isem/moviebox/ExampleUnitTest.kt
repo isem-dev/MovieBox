@@ -1,4 +1,4 @@
-package com.backbase.assignment
+package dev.isem.moviebox
 
 import org.junit.Test
 

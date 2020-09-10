@@ -1,4 +1,4 @@
-package com.backbase.assignment.ui
+package dev.isem.moviebox.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
-import com.backbase.assignment.databinding.DetailFragmentBinding
+import dev.isem.moviebox.databinding.DetailFragmentBinding
 
 class DetailFragment : Fragment() {
 

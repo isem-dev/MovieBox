@@ -6,7 +6,7 @@
     <data>
         <variable
             name="movie"
-            type="com.backbase.assignment.network.MovieProperty" />
+            type="dev.isem.moviebox.network.MovieProperty" />
 
     </data>
 
@@ -57,7 +57,7 @@
         app:releaseDateFormat="@{movie.releaseDate}"
         tools:text="April 12, 2019" />
 
-    <com.backbase.assignment.ui.custom.RatingView
+    <dev.isem.moviebox.ui.custom.RatingView
         android:id="@+id/rating"
         android:layout_width="40dp"
         android:layout_height="40dp"

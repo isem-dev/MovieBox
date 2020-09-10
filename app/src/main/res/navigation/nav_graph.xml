@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/overviewFragment"
-        android:name="com.backbase.assignment.ui.OverviewFragment"
+        android:name="dev.isem.moviebox.ui.OverviewFragment"
         android:label="overview_fragment"
         tools:layout="@layout/overview_fragment" >
         <action
@@ -16,11 +16,11 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.backbase.assignment.ui.DetailFragment"
+        android:name="dev.isem.moviebox.ui.DetailFragment"
         android:label="detail_fragment"
         tools:layout="@layout/detail_fragment">
         <argument
             android:name="selectedMovieProperty"
-            app:argType="com.backbase.assignment.network.MovieProperty"/>
+            app:argType="dev.isem.moviebox.network.MovieProperty"/>
     </fragment>
 </navigation>

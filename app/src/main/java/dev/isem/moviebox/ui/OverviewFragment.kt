@@ -1,4 +1,4 @@
-package com.backbase.assignment.ui
+package dev.isem.moviebox.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,10 +10,10 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
-import com.backbase.assignment.R
-import com.backbase.assignment.databinding.OverviewFragmentBinding
-import com.backbase.assignment.ui.adapters.MoviesAdapter
-import com.backbase.assignment.ui.adapters.PostersGridAdapter
+import dev.isem.moviebox.R
+import dev.isem.moviebox.databinding.OverviewFragmentBinding
+import dev.isem.moviebox.ui.adapters.MoviesAdapter
+import dev.isem.moviebox.ui.adapters.PostersGridAdapter
 
 class OverviewFragment : Fragment() {
 

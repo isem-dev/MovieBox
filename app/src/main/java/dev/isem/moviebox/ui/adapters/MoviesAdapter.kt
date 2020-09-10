@@ -1,12 +1,12 @@
-package com.backbase.assignment.ui.adapters
+package dev.isem.moviebox.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.backbase.assignment.databinding.MovieItemBinding
-import com.backbase.assignment.network.MovieProperty
+import dev.isem.moviebox.databinding.MovieItemBinding
+import dev.isem.moviebox.network.MovieProperty
 
 class MoviesAdapter(private val onClickListener: OnClickListener) :
     ListAdapter<MovieProperty, MoviesAdapter.MoviePropertyViewHolder>(DiffCallback) {
